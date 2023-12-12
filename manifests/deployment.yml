@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kushagraupadhyaypipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kushagraupadhyaypipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: kushagraupadhyaypipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: kushagraupadhyaypipelinesjavascriptdocker 
+          image: dantekucontainerregistry.azurecr.io/kushagraupadhyaypipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
