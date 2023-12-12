@@ -2,6 +2,8 @@
 # Build and push image to Azure Container Registry; Deploy to Azure Kubernetes Service
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
+# doc followed - https://learn.microsoft.com/en-in/azure/aks/devops-pipeline?view=azure-devops&viewFallbackFrom=vsts&pivots=pipelines-yaml&tabs=cli
+
 trigger:
 - main
 
